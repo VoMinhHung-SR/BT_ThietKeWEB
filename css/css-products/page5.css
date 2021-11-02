@@ -1,0 +1,73 @@
+.products-boxshadow > .product-content > div > a::after{
+    content: "";
+}
+#product1 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Strap/Details/Product1/Camo/camo1_2000x.jpg);
+}
+#product2 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    /* background-image: url(/img/Products/Strap/Details/Product2/Tripod_2000x.jpg); */
+}
+#product3 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    /* background-image: url(/img/Products/Strap/Details/Product3/waist_staps_prvke_2000x.jpg); */
+}
+#product4 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Strap/Details/Product4/neckstrapwithcamera_104375a9-4f1f-49b4-8c3e-835ac8a05df7_2000x.png);
+}
+#product5 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Strap/Details/Product5/slingwithcanon_2000x.png);
+}
+#product6 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Strap/Details/Product6/wriststrapimage1_2000x.png);
+}
+#product7 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Strap/Details/Product7/magneticbuckle_2000x.jpg);
+}

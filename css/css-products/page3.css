@@ -1,0 +1,93 @@
+.products-boxshadow > .product-content > div > a::after{
+    content: "";
+}
+#product1 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product1/Black/access_2000x_8abb0eb8-e2aa-4f31-b6bd-2d98639c98dc_2000x.png);
+}
+#product2 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product2/Black/fernwehback_3daa8414-8933-455f-8a40-a3e5ddd83a6c_2000x.png);
+}
+#product3 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product3/Black/PRVKEv2backpanel_2000x.png);
+}
+#product4 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product4/Black/Back_2000x.png);
+}
+#product5 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product5/Black/carryall_open_2000x_ba73bd6f-f957-4e07-b5b5-25b6bb1af132_400x.jpg);
+}
+#product6 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product6/duo_back_2000x.png);
+}
+#product7 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product7/Black/veer_back_2000x.png);
+}
+#product8 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product8/Inside_Fanny_Pack_2000x.jpg);
+}
+#product9 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Bags/Details/Product9/detour_no_straps_2000x.png);
+}

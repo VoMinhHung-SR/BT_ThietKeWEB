@@ -1,0 +1,123 @@
+.products-boxshadow > .product-content > div > a::after{
+    content: "";
+}
+#product1 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    /* background-image: url(/img/Products/Accessories/Details/Product1/web_rainfly_pocket_2000x.jpg); */
+}
+#product2 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product2/essential_back_2000x.png);
+}
+#product3 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product3/mini_back_2000x.png);
+}
+#product4 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product4/pro_open_2000x.png);
+}
+#product5 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product5/web_travel_journal_yellow_2000x.png);
+}
+#product6 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product6/Medium/mediumback_2000x.jpg);
+}
+#product7 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product7/Green/web_beanie_green_2000x_b827e1fe-9595-4385-a03b-de5daef851a4_2000x.jpg);
+}
+#product8 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product8/lens_case_packed_2000x.png);
+}
+#product9 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product9/cube_open_camera_2_b1973081-53ab-457b-82b4-2d6496bcebd2_2000x.png);
+}
+#product10 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product10/PouchBack_2000x.jpg);
+}
+#product11 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product11/Small/smallnogate_2000x.jpg);
+}
+#product12 > .product-content > div > a:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/img/Products/Accessories/Details/Product12/Untitled-5_2000x.png);
+}

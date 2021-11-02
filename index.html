@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html>
- <head>
+ <head> 
     <meta charset="UTF-8">
-    <title>Balo</title>
-    <link rel="stylesheet" href="Project.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/Project.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <script src="js-index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="js/js-index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a.go-to-top-btn").click(function(){
-                $("body, html").animate({
-                    scrollTop : 0
-                },1000);
-            } )
-            $(window).scroll(function(){
-                if($(this).scrollTop() >= 200){
-                    $("a.go-to-top-btn > i").css("display", "block");
-                    $("a.go-to-top-btn ").fadeIn(500);
-                }
-                else{
-                    $("a.go-to-top-btn ").fadeOut(500);
-                }
-            })
-        })
-    </script>
+    
  </head>
  <body onload="init()">
-     <script type="text/javascript">
-        // bắt sự kiện cuộn trang 
-        window.addEventListener("scroll",function(){
-            var navScroll = document.querySelector("header");
-            navScroll.classList.toggle("areaScroll", window.scrollY > 0)
-        })
-     </script>
-     <header>
+    <header>
         <div>Giảm thiểu đi ra ngoài khi không cần thiết , online đã có chúng tôi!!!</div>
         <nav>
             <ul class="menu">
@@ -43,18 +20,18 @@
                     <a href="#" >LoGO</a>
                 </li>
                 <li>
-                    <a href="#">Bags</a>
+                    <a href="page3_Bags.html">Bags</a>
                 </li>
                 <li>
-                    <a href="#">Phụ Kiện</a>
+                    <a href="page4_Accessories.html">Phụ Kiện</a>
                 </li>
                 <li>
-                    <a href="#">Thịnh Hành</a>
+                    <a href="page5_CameraStraps.html">Camera straps</a>
                 </li>
                 <li>
-                    <a href="#">Liên Hệ</a>
+                    <a href="page6_Sale.html">Giảm giá</a>
                 </li>
-                <li>
+                <li>    
                     <a href="#">Về Chúng Tôi</a>
                 </li>
                 <li>
@@ -73,14 +50,14 @@
                 </li>
             </ul>
         </nav>
-     </header>
-     <div class="go-to-top-link">
+    </header>
+    <div class="go-to-top-link">
         <a href="#" class="go-to-top-btn">
             <i class="fas fa-arrow-circle-up"></i>
         </a>
-     </div>
+    </div>
      <!-- body -->
-     <section>
+    <section>
         <div class="See_All_New">
             <div>
                 <img src="img/FERNEU_1600x.png" alt="Banner">
@@ -88,17 +65,17 @@
             <div class="caption">
                 <div class="caption__frame">                
                     <h1 >tìm những nguồn cảm hứng mới</h1>
-                    <a href="page2.html">See All New</a>
+                    <a href="page2_AllNew.html">See All New</a>
                 </div>  
             </div>
         </div>
-     </section>
-     <div class="line_break top-line"></div>
+    </section>
+    <div class="line_break top-line"></div>
 
     <section>
         <div class="table_menu">
             <div>
-                <a href="#"></a>
+                <a href="page8_Photographers.html" target="_blank" ></a>
                 <img src="img/PhotographerHomePage_1600x.jpg" alt="Photographer">
                 <div class="scription">
                     <h1>Chụp Ảnh</h1>
@@ -106,7 +83,7 @@
                 </div>
             </div>
             <div>
-                <a href="#"></a>
+                <a href="page9_Travelers.html" target="_blank"></a>
                 <img src="img/TravelersHomePage2_200x.jpg" alt="Travelers">
                 <div class="scription">
                     <h1>Du Lịch</h1>
@@ -115,7 +92,7 @@
                 </div>
             </div>
             <div>
-                <a href="#"></a>
+                <a href="page10_Commuters.html" target="_blank"></a>
                 <img src="img/commuter_home_page_800x.png" alt="commuter">
                 <div class="scription">
                     <h1>Đi lại</h1>
@@ -130,9 +107,9 @@
             <div class="model"><img src="img/Syle_Meets_Functionality_HomePage_1600x.png" alt="Model"></div>
             <div class="caption2">
                 <div class="caption2__frame">
-                    <a href="#" class="caption2__title">Những việc bạn cần làm, chỉ là để vào giỏ</a>
-                    <div>slogan in there</div>
-                    <a href="#" class="caption2__button">View all Bags </a>
+                    <a href="page3_Bags.html" class="caption2__title">Những việc bạn cần làm, chỉ là để vào giỏ</a>
+                    <div>slogan in here</div>
+                    <a href="page3_Bags.html" class="caption2__button">View all Bags </a>
                 </div>
             </div>
         </div>
@@ -147,9 +124,9 @@
         </div>
         <div class="product-container">
             <div class="product product1">
-                <div class="product__img">
+                <div class="product__img">  
                     <a href="#">
-                        <img src="img/Products/AllNewPRVE_2000x.jpg" alt="produc1" >
+                        <img src="img/Products/Bags/AllNewPRVE_2000x.jpg" alt="produc1" >
                     </a>
                 </div>
                 <a href="#">
@@ -159,7 +136,7 @@
             <div class="product product2">
                 <div class="product__img">
                     <a href="#">
-                        <img src="img/Products/FERNGOTY_2000x.png" alt="produc2" >
+                        <img src="img/Products/Bags/FERNGOTY_2000x.png" alt="produc2" >
                     </a>
                 </div>
                 <a href="#">
@@ -169,7 +146,7 @@
             <div class="product product3">
                 <div class="product__img">
                     <a href="#">
-                        <img src="img/Products/access_standing_straps_out_2000x_318a5f62-3ff0-4999-a446-678f09cd2032_400x.png" alt="produc3" >
+                        <img src="img/Products/Bags/access_standing_straps_out_2000x_318a5f62-3ff0-4999-a446-678f09cd2032_400x.png" alt="produc3" >
                     </a>
                 </div>
                 <a href="#">HEXAD Access Duffel Backpack </a>

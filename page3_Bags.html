@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shop Bags Page</title>
+        <link rel="stylesheet" href="css/css-products/page3.css">
+        <link rel="stylesheet" href="css/css-Shared.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+        <script src="js/js-Shared.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+     </head>
+     <body onload="init()">
+        
+         <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">LoGO</a>
+                    </li>
+                    <ul class="burger-menu">
+                        <div>
+                            <i class="fas fa-minus" id="burger__top"></i>
+                            <i class="fas fa-minus" id="burger__middle"></i>
+                            <i class="fas fa-minus" id="burger__bottom"></i>
+                        </div>
+                    </ul>
+                    <!-- vùng xử lí nav-menu & burger-menu -->
+                    <li class="burger-filling" id="active-subMenu">
+                        <ul>
+                            <li class="flexible">
+                                <a href="#">Bags</a>
+                            </li>
+                            <li  class="flexible">
+                                <a href="page4_Accessories.html">Phụ Kiện</a>
+                            </li>
+                            <li  class="flexible">
+                                <a href="page5_CameraStraps.html">Camera straps</a>
+                            </li>
+                            <li  class="flexible">
+                                <a href="page6_Sale.html">Giảm Giá</a>
+                            </li>
+                            <li  class="flexible">
+                                <a href="#">Về Chúng Tôi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- vùng xử lí nav-menu & burger-menu -->
+
+                    <!-- vùng xử lí nav-icon -->
+                    <li>
+                        <div class="searchBar">
+                            <span class="fas fa-search" id="search-icon"></span>
+                            <input type="text" placeholder=" " id="text__input">
+                            <span class="fas fa-backspace backspace-icon" id="hidden"></span>
+                            <span class="fas fa-times close-icon"></span>
+                        </div>
+                        <div>
+                            <span class="fas fa-user" id="user"></span>
+                        </div>
+                        <div>
+                            <span class="fas fa-shopping-cart" id="shopping-cart"></span>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </nav>
+         </header>
+         <div class="go-to-top-link">
+            <a href="#" class="go-to-top-btn">
+                <i class="fas fa-arrow-circle-up"></i>
+            </a>
+         </div>
+
+     <!-- body -->
+     <div class="title">
+        <div>        
+             <h1>SHOP BAGS</h1>
+             <div class="line2"></div>
+        </div>
+     </div>
+     <section class="main">
+        <div class="col80 flex">
+            <!-- sử lí filter -->
+            <div class="filter">
+                <div class="sub-title">Bộ lọc</div>
+                <div id="sort-list">Sắp xếp sản phẩm</div>
+                <div>
+                    <div id="line"></div>
+                    <div class="option">
+                        <label for="l2h">Giá: Thấp đến Cao</label>
+                        <input type="radio" name ="filters" value="L2H">
+                    </div>
+                    <div id="line"></div>
+                    <div class="option">
+                        <label for="h2l">Giá: Cao đến Thấp</label>
+                        <input type="radio" name ="filters" value="H2L">
+                    </div>
+                    <div id="line"></div>
+                    <div class="option">
+                        <label for="New">Mới nhất</label>
+                        <input type="radio" name ="filters" value="new">
+                    </div>
+                    <div id="line"></div>
+                    <div class="option"> 
+                        <label for="Popular">Phổ biến</label>
+                        <input type="radio" name ="filters" value="popular">
+                    </div>
+                    <div id="line"></div>
+                    <div class="option">
+                        <label for="BestSeller">Bán chạy</label>
+                        <input type="radio" name ="filters" value="bestSeller">
+                    </div>
+                    <div id="line"></div>
+                    <div class="option">
+                        <label for="Sale">Giảm giá</label>
+                        <input type="radio" name ="filters" value="sale">
+                    </div>
+                    <div id="line"></div>
+                </div>
+            </div>
+            <!-- vùng sản phẩm -->
+            <div class="container">
+                <div class="products">
+                    <div class="product">
+                        <div class="products-boxshadow " id="product1">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/access_standing_straps_out_2000x_318a5f62-3ff0-4999-a446-678f09cd2032_400x.png" alt="product1"></a>
+                                </div>
+                                <a href="#" class="text">HEXAD Access Duffel Backpack</a>
+                                <a href="#" class="price">2.499.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product2">
+                            <div class="product-content">
+                                <div>
+                                    
+                                    <a href="#"><img src="img/Products/Bags/FERNGOTY_2000x.png" alt="product2"></a>
+                                </div>
+                                <a href="#" class="text">FERNWEH Backpacking Bag</a>
+                                <a href="#" class="price">2.199.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product3">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/AllNewPRVE_2000x.jpg" alt="product3"></a>
+                                </div>
+                                <a href="#" class="text">PRVKE Lite</a>
+                                <a href="#" class="price">1.990.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product4">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/AllnewLITE_400x.jpg" alt="product4"></a>
+                                </div>
+                                <a href="#" class="text">All-New PRVKE</a>
+                                <a href="#" class="price">1.990.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product5">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/carryall_standing_staps_out_2000x_5be76f3d-0060-4885-8e59-4320cd506465_400x.jpg" alt="product5"></a>
+                                </div>
+                                <a href="#" class="text">HEXAD Carryall Duffel Backpack</a>
+                                <a href="#" class="price">2.199.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product6">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/duo_front_400x.png" alt="product6"></a>
+                                </div>
+                                <a href="#" class="text">DUO Daypack</a>
+                                <a href="#" class="price">1.790.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product7">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/veer_floating_side_400x.png" alt="product7"></a>
+                                </div>
+                                <a href="#" class="text">VEER Packable Bag</a>
+                                <a href="#" class="price">1.490.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product8">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/d1_fanny_pack_400x.png" alt="product8"></a>
+                                </div>
+                                <a href="#" class="text">D1 Fanny Pack</a>
+                                <a href="#" class="price">790.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="products-boxshadow " id="product9">
+                            <div class="product-content">
+                                <div>
+                                    <a href="#"><img src="img/Products/Bags/detour_400x.png" alt="product9"></a>
+                                </div>
+                                <a href="#" class="text">DETOUR Hip Pack</a>
+                                <a href="#" class="price">990.000 VND</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- body -->
+
+    <footer>
+        <div class="footer-contain">
+            <div class="footer-content">
+                <div class="footer__flex">
+                    <div class="col10">
+                        <a href="#" class="logo">LoGO</a>
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.youtube.com/channel/UClCe0jTV9_Ti9m8kvU0NNIA" target="_blank" class="fab fa-youtube"></a>
+                                <a href="https://www.facebook.com/Shiray.h/" target="_blank" class="fab fa-facebook-f"></a>
+                                <a href="https://twitter.com/ShiRay76094313" target="_blank" class="fab fa-twitter"></a>
+                                <a href="https://www.instagram.com/shiray_h/" target="_blank" class="fab fa-instagram"></a>
+                                <a href="https://www.linkedin.com/in/shiray/" target="_blank" class="fab fa-linkedin-in"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col20">
+                        <h4>Về Chúng Tôi</h4>
+                        <ul>
+                             <li><a href="#">Thành lập</a></li>
+                             <li><a href="#">Chi Nhánh</a></li>
+                             <li><a href="#">Liên Hệ</a></li>
+                             <li><a href="https://www.dmca.com/Protection/Status.aspx?ID=1bf3f65e-4ac8-457e-8400-9d299263f727" target="_blank">Chứng Nhận</a></li>
+                         </ul>
+                    </div>
+                    <div class="col25 ">
+                         <h4>Hỗ trợ khách hàng</h4>
+                         <ul>
+                             <li><a href="#">Hướng dẫn mua hàng</a></li>
+                             <li><a href="#">Điều khoản và điều kiện</a></li>
+                             <li><a href="#">Chính sách bảo mật</a></li>
+                             <li><a href="#">Chính sách thanh toán</a></li>
+                             <li><a href="#">Chính sách giao hàng</a></li>
+                             <li><a href="#">Chính sách đổi trả</a></li>
+                             <li><a href="#">Hướng dẫn gửi trả hàng</a></li>
+                             <li><a href="#">Chính sách bảo hành</a></li>
+                             <li><a href="#">Mua trả góp</a></li>
+                         </ul> 
+                    </div>
+                    <div class="col45">
+                         <h4>Thông tin liên hệ</h4>
+                         <ul>
+                             <li> 
+                                 <div>Địa chỉ: 371 Nguyễn Kiệm, phường 3, quận Gò Vấp, Tp.Hồ Chí Minh</div>
+                                 <a href="https://www.google.com/maps/place/371+Nguy%E1%BB%85n+Ki%E1%BB%87m,+Ph%C6%B0%E1%BB%9Dng+3,+G%C3%B2+V%E1%BA%A5p,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8149271,106.6768845,17z/data=!4m5!3m4!1s0x317528e195f816b7:0xfb5c0101490d8870!8m2!3d10.8162655!4d106.6778125?hl=vi-VN" target="_blank">Chỉ Dường</a>
+                             </li>
+                             <li> 
+                                 <div>Địa chỉ: 5A, phường Trung Mỹ Tây , quận 12, Tp.Hồ Chí Minh</div>
+                                 <a href="https://www.google.com/maps/place/5A+%C4%90%C6%B0%E1%BB%9Dng+Trung+M%E1%BB%B9+T%C3%A2y+14A,+Trung+M%E1%BB%B9+T%C3%A2y,+Qu%E1%BA%ADn+12,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8466549,106.6115204,17z/data=!3m1!4b1!4m5!3m4!1s0x31752a30f2722f7f:0x5baf4e75a56c47fb!8m2!3d10.8466549!4d106.6137144?hl=vi-VN" target="_blank">Chỉ Dường</a>
+                             </li>
+                             <li> 
+                                 <div>Địa chỉ: Ấp Tân Hòa, xã Tân Lập, huyện Tân Biên, tỉnh Tây Ninh</div>
+                                 <a href="https://www.google.com/maps/place/Ch%E1%BB%A3+T%C3%A2n+L%E1%BA%ADp,+T%C3%A2n+L%E1%BA%ADp,+T%C3%A2n+Bi%C3%AAn,+T%C3%A2y+Ninh,+Vi%E1%BB%87t+Nam/@11.6084851,105.9845187,17.78z/data=!4m13!1m7!3m6!1s0x310b62a4a1680145:0x64c138350d29ded0!2zQ2jhu6MgVMOibiBM4bqtcCwgVMOibiBM4bqtcCwgVMOibiBCacOqbiwgVMOieSBOaW5oLCBWaeG7h3QgTmFt!3b1!8m2!3d11.6079575!4d105.9873395!3m4!1s0x310b62a4a1680145:0x64c138350d29ded0!8m2!3d11.6079575!4d105.9873395?hl=vi-VN" target="_blank">Chỉ Dường</a>
+                             </li>
+                             <li> 
+                                 <Span>Email :</Span>
+                                 <a href="mailto:BagShop@gmail.com">BagShop@gmail.com</a>
+                             </li>
+                             <li> 
+                                <Span>Hotline :</Span>
+                                <span class="number">0382590839</span>
+                            </li>
+                         </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </footer>
+ </body>
+</html>

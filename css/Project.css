@@ -1,0 +1,620 @@
+/*heading*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s ease-in;
+}
+header > div{
+    color: rgba(255, 248, 248, 0.9);
+    background-color: #3d3d3d;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    /* font-style: italic; */
+    font-size: 7px;
+    text-transform: uppercase;
+    text-shadow: 1px 1.5px 4px #ed5338af;
+}
+header > nav > ul.menu > li > a{
+    color: rgba(255, 248, 248, 0.9);
+    text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.9);
+    transition: 0.5s ease-in;
+}
+/* go to top */
+div.go-to-top-link{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 5%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 100px;
+}
+div.go-to-top-link > a.go-to-top-btn{
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+div.go-to-top-link > a.go-to-top-btn:hover > i{
+    text-shadow: black 1px 0.5px 2px;
+    transition: 0.5s ease-in-out;
+}
+div.go-to-top-link > a.go-to-top-btn > i{
+    width: 100%;
+    font-size: 2.5rem;
+    color: #ed5338af;
+    text-align: center;
+    transition: 0.5s ease-in;
+    display: none;
+}
+/* Xử lí thanh cuộn */
+header.areaScroll{
+    background-color: #fff;
+    transition: 1.5s ease-in-out;
+}
+header.areaScroll > div{
+    display: none;
+}
+header.areaScroll >nav > ul.menu > li > a{
+    color: black ;
+    text-shadow: none;
+    transition: 1s ease-in-out;
+}
+header.areaScroll >nav > ul.menu > li > a:hover{
+    color: #ed5338;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+/* gép nhóm span#search-icon, span#shopping-cart, span#user:hover */
+header.areaScroll > nav > ul.menu > li:last-child > div > span#search-icon {
+    color: black ;  
+    transition: 1s ease-in-out;
+}
+header.areaScroll > nav > ul.menu > li:last-child > div > span#search-icon:hover{
+    color: #ed5338;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+header.areaScroll > nav > ul.menu > li:last-child > div > span#shopping-cart {
+    color: black ;
+    transition: 1s ease-in-out;
+}
+header.areaScroll > nav > ul.menu > li:last-child > div > span#shopping-cart:hover{
+    color: #ed5338;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+header.areaScroll > nav > ul.menu > li:last-child > div >  span#user{
+    color: black ;
+    transition: 1s ease-in-out;
+}
+header.areaScroll > nav > ul.menu > li:last-child > div >  span#user:hover{
+    color: #ed5338;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+/* menu */
+nav{
+    width: 82.5%;
+    margin: 0 auto;
+    line-height: 4rem;
+}
+nav > ul.menu{
+    display: flex;
+    list-style: none;
+}
+nav > ul.menu > li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+    font-weight: 600;
+    transform: scale(1);
+    transition: 0.5s;
+}
+nav > ul.menu > li > a:hover{
+    color: #ed5338;
+    transform: scale(1.1,1.1);
+    transition: 1s;
+    text-shadow: none;
+}
+/* nav-icon */
+.menu > li:first-child{
+    margin-right: auto;
+    min-width: 100px;
+    max-width: 20%;
+}
+.menu > li:last-child{
+    margin-left: auto;
+    display: flex;
+}
+.menu > li:last-child > div{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 2.5rem;
+    transition: 1s;
+}
+.menu > li:last-child > div > input {
+    width: 100%;
+    opacity: 0;
+    border: none;
+    border-radius: 100px;
+    padding: 0.6rem 4rem 0.6rem 2.4rem;
+    outline: none;
+    transition: 0.5s width ease-in-out,0.5s opacity ease-in,
+    0.5s border-radius ease-in, 0.5s padding ease-in-out;
+}
+.menu > li:last-child > div > span{
+    position: absolute; 
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+}
+.menu > li:last-child > div > #search-icon, #shopping-cart, #user{
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 109;
+    color: rgba(255, 248, 248, 0.9);
+    padding: 10px;
+    transition: 0.5s ease-in;
+}
+.menu > li:last-child > div > #search-icon:hover, 
+#shopping-cart:hover, #user:hover{
+    opacity: 0.8;
+    text-shadow: white 2px 0px 1px;
+}
+.menu > li:last-child > div >span.backspace-icon{
+    visibility: hidden;
+}
+.menu > li:last-child > div > span.close-icon{
+    opacity: 0;
+}
+/* search-bar */
+.open{
+    opacity: 0.8 !important;
+    width: 13rem !important;  
+}
+.openIconClick{
+    left: 0% !important ;
+    color: #ed5338 !important;
+}
+.active-closeIcon{
+    right: 5%;
+    top: 50%;
+    transition: 0.5s ease-out;
+    transform: translateY(-50%);
+    opacity: 1 !important;
+    color: #ed5338 !important;
+}
+.active-backspaceIcon{
+    top: 50%;
+    right: 15%;
+    color: rgba(0, 0, 0, 0.9) !important;
+    transform: translateY(-50%);
+    transition: 0.5s ease-out;
+    visibility: visible ;
+}
+
+/*heading*/
+
+
+/*tbody*/
+
+
+
+
+
+/* vùng 1 */
+div.See_All_New{
+    position: relative;
+    width: 100%;
+    top: 30px
+}
+div.See_All_New > div > img{
+    width: 100%;
+}
+div.See_All_New > .caption{
+    position: absolute;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div.See_All_New > .caption > .caption__frame{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+div.See_All_New > .caption >.caption__frame> h1{
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 47px;
+}
+div.See_All_New > .caption > .caption__frame>a{
+    text-decoration: none;
+    color: black;
+    background-color:rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 4rem;
+    transition: 0.5s ease-in;
+    position: relative;
+    z-index: 1;
+}
+/* xử lí trượt hover "See all new" */
+div.See_All_New > .caption > .caption__frame>a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ed5338;
+    z-index: -1;
+    transform: scaleX(0); 
+    transform-origin: left ;
+    transition:  transform 0.5s ease-in-out;
+}
+div.See_All_New > .caption > .caption__frame>a:hover::before{
+    transform: scaleX(1);
+    transition: 0.5s ease-in-out;
+}
+div.See_All_New > .caption >.caption__frame> a:hover{
+    background-color:  rgba(255, 255, 255, 0);
+    color: white;
+    transition: 0.5s;
+    
+}
+/* vùng responsive */
+@media only screen and (min-width: 900px){    
+    .caption > h1{
+        font-size: 42px;
+    }
+}
+@media only screen and (min-width: 700px){    
+    .caption > h1{
+        font-size: 32px ;
+    }
+}
+.line_break{
+    width: 85%;
+    border: solid 1px black;
+    margin: 1rem auto;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.top-line{
+    margin: 2.2rem;
+}
+
+
+
+
+/* vùng 2 */
+.table_menu{
+    line-height: 1.5rem;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+}
+.table_menu>div{
+    width: 33%;
+    margin-left: 1.5%;
+    position: relative;
+}
+.table_menu>div>a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: block;
+}
+.table_menu>div>a:hover{
+    background-color: black;
+    opacity: 0.4;
+}
+.table_menu>div>img{
+    width: 100%;
+    display: block;
+}
+.table_menu>div>div.scription{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.table_menu>div>div.scription > h1{
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: black 2px 1.5px 2px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.table_menu>div>div.scription >div{
+    text-align: center;
+    text-shadow: black 2px 1px 2px;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #ed5338;
+    padding: 5px auto;
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* vùng 3 */
+.flex3{
+    display: flex;
+}
+.flex3 > div{
+    width: 50%;
+}
+.flex3 > div.model:hover{
+    opacity: 0.8;
+}
+.flex3 >div> img{
+    width: 100%;
+}
+.flex3 > .caption2 {
+    margin: auto;
+}
+.flex3 > .caption2> .caption2__frame{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex3 > .caption2> .caption2__frame > div{
+    padding: 1rem 0 1.3rem 0;
+}
+.flex3 > .caption2 > .caption2__frame> .caption2__title{
+    font-size:  20px;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.flex3 > .caption2> .caption2__frame > .caption2__button{
+    line-height: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: black 1px solid ;
+    transition: 0.5s ease-in;
+}
+.flex3 > .caption2> .caption2__frame > .caption2__button:hover{
+    background-color: #3d3d3d;
+    border: #3d3d3d 1px solid ;
+    color: white;
+    transition: 1s;
+}
+.trademark{
+    width: 90%;
+    margin: 0 auto;
+}
+.trademark>img{
+    width: 100%;
+}
+
+
+
+
+
+/* Vùng 4 */
+.product-content >div> h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: 32px;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+.product-content > .product-text > div{
+    opacity: 0.15;
+    width: 70%;
+}
+.product-content >div>div{
+    width: 80%;
+}
+.product-content > div.product-container{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+.product-content > div.product-container > div + div{
+    margin-left: 2%;
+}
+.product-content > div.product-container > div.product{
+    width: 33%;
+}
+/* Vùng 4 - text */
+.product-content > div.product-container > div.product > a{
+    text-transform: uppercase;
+    text-decoration: none; 
+    text-align: center;
+    padding: 2rem 0px;
+    display: block;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+.product-content > div.product-container > div.product > a:hover{
+    color: #ed5338;
+    transform: scale(1.1);
+}
+/* Vùng 4 - xử lí ảnh */
+.product-content > div.product-container > div.product > div.product__img{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.product-content > div.product-container > div.product > div.product__img> a{
+    width: 100%;
+    text-decoration: none;
+}
+/* Vùng 4 - hover và scale ảnh */
+.product-content > div.product-container > div.product > div.product__img > a > img{
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    display: block;
+}
+.product-content > div.product-container > div.product > div.product__img:hover > a > img {
+    transform: scale(1.1);
+}  
+
+
+
+/* Vùng 5 */
+.review-area{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/* Vùng 6 */
+.banner{
+    width: 100%;
+}
+.banner > img{
+    width: 100%;
+}
+
+/*body*/
+
+
+
+
+
+/* footer */
+.number{
+    color: #ed5338;
+}
+.col10{
+    width: 10%;
+    position: relative;
+}
+.col20{
+    width: 20%;
+}
+.col25{
+    width: 25%;
+}
+.col45{
+    width: 45%;
+}
+.footer-contain{
+    width: 100%;
+    background-color:#2d2e30 ;
+}
+.footer-content{
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem auto;
+}
+.footer-content > .footer__flex{
+    display: flex;
+    line-height: 3.5rem;
+    padding: 16px 0px;
+}
+.footer-content > .footer__flex > div + div{
+    margin-left: 0.5rem;
+}
+.footer-content > .footer__flex > div > h4{
+    color:rgba(255, 248, 248, 0.9);
+}
+.footer-content > .footer__flex > div > ul > li{
+    list-style-type: none;
+    line-height: 1.6;
+}
+.footer-content > .footer__flex > div > ul > li > a{
+    text-decoration: none;
+    font-size: 12px;
+    color:rgba(255, 248, 248, 0.9);
+}
+.footer-content > .footer__flex > div > ul > li >div , span{
+    line-height: 1.7;
+    font-size: 12px;
+    color:rgba(255, 248, 248, 0.9);
+}
+.footer-content > .footer__flex > div.col45 > ul > li > a{
+    color: #ed5338;
+}
+/* Social media */
+.logo, .social-media{
+    position: absolute;
+    bottom: 0;
+}
+.logo{
+    bottom: 15%;
+    text-decoration: none;
+    color: #ed5338;
+    font-size: 22px;
+}
+.social-media > li{
+    display: inline-flex;
+    
+}
+.social-media > li > a{
+    width: 100%;
+    padding: 10px;
+    transition: 0.5s ease-in;
+}
+.social-media > li > a:first-child{
+    padding-left: 0px;
+}
+.social-media > li > a:hover{
+    color: #ed5338 !important;
+    transform: scale(1.5);
+    transition: 1s linear;
+}
+.fa-youtube , .fa-facebook-f, .fa-twitter, 
+.fa-instagram, .fa-linkedin-in{
+    font-size: 1rem !important;
+}
+/* footer */
+
+
+
+/* Vùng dùng chung */
+*{
+    font-family: 'Dosis';
+    /* font-family: "Work Sans", sans-serif; */
+    color: black;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
