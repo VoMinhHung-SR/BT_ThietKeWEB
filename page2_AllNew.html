@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Balo</title>
+        <title>ALL-NEW Page</title>
         <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/page2-css.css">
@@ -12,6 +12,7 @@
         <script src="js/js-Shared.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="owlcarousel/owl.carousel.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body onload="init()">
         <script>$(document).ready(function(){
@@ -22,17 +23,19 @@
                 margin:-11,
                 responsiveClass:true,
                 responsive:{
-                    // max-width > 357px = 1 items
-                    375:{
+                    // (min-width >= 0px)  = 1 items
+                    0:{
                         items:1,
-                        nav: true
+                        nav: false,
+                        loop: true
                     },        
-                    // width > 768px = 2 items  
+                    // (min-width >= 768px & max - width <= 1023px) = 2 items  
                     768:{
                         items:2,
-                        nav : false
+                        nav : false,
+                        loop:true
                     },
-                    // max - width > 1023px = 4 items
+                    // (max - width > 1023px) = 4 items
                     1023:{
                         items:4,
                         nav:true,
@@ -48,7 +51,11 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="index.html">LoGO</a>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo-full_280px.png" alt="SWANDRD-logo">
+                            </a>
+                        </div>
                     </li>
                     <ul class="burger-menu">
                         <div>
@@ -67,13 +74,13 @@
                                 <a href="page4_Accessories.html">Phụ Kiện</a>
                             </li>
                             <li  class="flexible">
-                                <a href="page5_CameraStraps.html">Camera Straps</a>
+                                <a href="page5_CameraStraps.html">Dây Đai</a>
                             </li>
                             <li  class="flexible">
                                 <a href="page6_Sale.html">Giảm Giá</a>
                             </li>
                             <li  class="flexible">
-                                <a href="#">Về Chúng Tôi</a>
+                                <a href="page7_AboutUs.html">Về Chúng Tôi</a>
                             </li>
                         </ul>
                     </li>
@@ -117,11 +124,13 @@
                 <div class="item">
                     <div class="products-boxshadow" id="product1">
                         <div class="product">
-                            <div>
+                            <div class="product-image">
                                 <a href="#"><img src="img/Products/Bags/AllNewPRVE_2000x.jpg" alt="product1"></a>
                             </div>
-                            <a href="#" class="text">ALL-NEW PRVKE</a>
-                            <a href="#" class="buttons">Buy now</a>
+                            <div class="product-text">
+                                <a href="#" class="text">ORIGINAL PRVKE</a>
+                                <a href="#" class="buttons">Buy now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,13 +138,15 @@
                 <div class="item">
                     <div class="products-boxshadow" id="product2">
                         <div class="product">
-                            <div>
+                            <div class="product-image">
                                 <a href="#">
                                     <img src="img/Products/Bags/AllnewLITE_400x.jpg" alt="product2">
                                 </a>
                             </div>
-                            <a href="#" class="text">PRVKE LITE</a>
-                            <a href="#" class="buttons">Buy now</a>
+                            <div class="product-text">
+                                <a href="#" class="text">PRVKE LITE</a>
+                                <a href="#" class="buttons">Buy now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,11 +154,13 @@
                 <div class="item">
                     <div class="products-boxshadow " id="product3">
                         <div class="product">
-                            <div>
+                            <div class="product-image">
                                 <a href="#"><img src="img/Products/Strap/allnewstraps_400x.png" alt="product3"></a>
                             </div>
-                            <a href="#" class="text">PREMIUM STRAP</a>
-                            <a href="#" class="buttons">Buy now</a>
+                            <div class="product-text">
+                                <a href="#" class="text">PREMIUM ACCESSORY STRAP</a>
+                                <a href="#" class="buttons">Buy now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,11 +168,13 @@
                 <div class="item">
                     <div class="products-boxshadow " id="product4">
                         <div class="product">
-                            <div>
+                            <div class="product-image">
                                 <a href="#"> <img src="img/Products/Bags/FERNGOTY_2000x.png" alt="product4"></a>
                             </div>
-                            <a href="#" class="text">FERNWEH BACKPACKING BAG</a>
-                            <a href="#" class="buttons">Buy now</a>  
+                            <div class="product-text">
+                                <a href="#" class="text">FERNWEH BACKPACKING BAG</a>
+                                <a href="#" class="buttons">Buy now</a>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -167,11 +182,13 @@
                 <div class="item">
                     <div class="products-boxshadow " id="product5">
                         <div class="product">
-                            <div>
+                            <div class="product-image">
                                 <a href="#"> <img src="img/Products/Bags/FERNGOTY_2000x.png" alt="product5"></a>
                             </div>
-                            <a href="#" class="text">FERNWEH BAG</a>
-                            <a href="#" class="buttons">Buy now</a>  
+                            <div class="product-text">
+                                <a href="#" class="text">ALL-NEW PRVKE</a>
+                                <a href="#" class="buttons">Buy now</a>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -184,8 +201,10 @@
             <div class="footer-contain">
                 <div class="footer-content">
                     <div class="footer__flex">
-                        <div class="col10">
-                            <a href="#" class="logo">LoGO</a>
+                        <div class="col10 ft-mobile ft-mobile__top">
+                            <a href="#" class="logo-bottom">
+                                <img src="img/logo-full_280px__white.png" alt="SWANDRD-logo">
+                            </a>
                             <ul class="social-media">
                                 <li>
                                     <a href="https://www.youtube.com/channel/UClCe0jTV9_Ti9m8kvU0NNIA" target="_blank" class="fab fa-youtube"></a>
@@ -196,7 +215,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col20">
+                        <div class="col20 ft-mobile">
                             <h4>Về Chúng Tôi</h4>
                             <ul>
                                 <li><a href="#">Thành lập</a></li>
@@ -205,7 +224,7 @@
                                 <li><a href="https://www.dmca.com/Protection/Status.aspx?ID=1bf3f65e-4ac8-457e-8400-9d299263f727" target="_blank">Chứng Nhận</a></li>
                             </ul>
                         </div>
-                        <div class="col25 ">
+                        <div class="col25 ft-mobile">
                             <h4>Hỗ trợ khách hàng</h4>
                             <ul>
                                 <li><a href="#">Hướng dẫn mua hàng</a></li>
@@ -219,7 +238,7 @@
                                 <li><a href="#">Mua trả góp</a></li>
                             </ul> 
                         </div>
-                        <div class="col45">
+                        <div class="col45 ft-mobile">
                             <h4>Thông tin liên hệ</h4>
                             <ul>
                                 <li> 
@@ -235,11 +254,16 @@
                                     <a href="https://www.google.com/maps/place/Ch%E1%BB%A3+T%C3%A2n+L%E1%BA%ADp,+T%C3%A2n+L%E1%BA%ADp,+T%C3%A2n+Bi%C3%AAn,+T%C3%A2y+Ninh,+Vi%E1%BB%87t+Nam/@11.6084851,105.9845187,17.78z/data=!4m13!1m7!3m6!1s0x310b62a4a1680145:0x64c138350d29ded0!2zQ2jhu6MgVMOibiBM4bqtcCwgVMOibiBM4bqtcCwgVMOibiBCacOqbiwgVMOieSBOaW5oLCBWaeG7h3QgTmFt!3b1!8m2!3d11.6079575!4d105.9873395!3m4!1s0x310b62a4a1680145:0x64c138350d29ded0!8m2!3d11.6079575!4d105.9873395?hl=vi-VN" target="_blank">Chỉ Dường</a>
                                 </li>
                                 <li> 
-                                    <Span>Email :</Span>
-                                    <a href="mailto:BagShop@gmail.com">BagShop@gmail.com</a>
+                                    <Span>Email 1:</Span>
+                                    <a href="mailto:1951052083hung@ou.edu.vn">1951052083hung@ou.edu.vn</a>
+                                        
+                                </li>
+                                <li>
+                                    <Span>Email 2:</Span>
+                                    <a href="mailto:vominhhung1546@gmail.com">vominhhung1546@gmail.com</a>
                                 </li>
                                 <li> 
-                                    <Span>Hotline :</Span>
+                                    <Span>Hotline:</Span>
                                     <span class="number">0382590839</span>
                                 </li>
                             </ul>

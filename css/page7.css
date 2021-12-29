@@ -1,11 +1,10 @@
-/* heading */
+/* header */
 header{
     position: fixed;
+    width: 100%;
     z-index: 100;
     transition: 0.5s ease-in;
-    top:  0px;
-    left: 0px;
-    right: 0px;
+    top : 0px;
 }
 
 header > nav > ul.menu > li > a{
@@ -121,6 +120,22 @@ nav > ul.menu > li > ul > li > a:hover{
     transition: 1s;
     text-shadow: none;
 }
+/* logo */
+.menu > li:first-child{
+    width: 140px;
+    margin-right: auto;
+}
+.menu > li:first-child > div.logo > a{
+    display: block;
+    margin-left: 10px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.menu > li:first-child > div.logo > a> img{
+    display: block;
+    width: 100%;
+}
 /* nav-icon */
 .menu > li:first-child{
     margin-right: auto;
@@ -231,13 +246,9 @@ nav > ul.menu > li > ul > li > a:hover{
 
 /* body */
 body{
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
-section.main{
-    width: 90%;
-    margin: 4rem auto;
-}
-/* Vùng top */
+/* Vùng title */
 div.title{
     width: 90%;
     position: relative;
@@ -246,119 +257,58 @@ div.title{
 }
 div.title > div{
     width: 90%;
-    margin: 2rem auto;
+    margin: 5rem auto 2rem auto;
 }
-div.title > div > h1{
-    font-size: 62px;
-    font-weight: 100;
+div.title2{
+    width: 90%;
+    position: relative;
+    margin: 2rem auto 0 auto;
 }
-div.title > div > .line2{
-    opacity: 0.2;
-    border: 0.5px black solid;
-}
-/* Vùng main */
-.products-contain{
+div.title2 > div{
     width: 90%;
     margin: 0 auto;
 }
-#product5{
-    display: none;
-}
-.products__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    flex-wrap: wrap; 
-}
-.products__flex > .products-boxshadow{
-    width: 22%;
-    margin: 2rem auto;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-    transition: 0.5s ease-in;            
-}
-.products__flex > .products-boxshadow:hover{
-    transform: translateY(-5%);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-    transition: 0.5s ease-in-out;
-}
-.products__flex > .products-boxshadow > div.product{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.products__flex > .products-boxshadow > div.product > a{
-    display: block;
+div > div > h1{
+    font-size: 36px;
+    font-weight: 100;
     text-align: center;
-    color: #2d2e30;
-    transition: 0.75s ease-in;
-}
-.products__flex > .products-boxshadow > div.product > a.text{
-    padding: 1.5rem 0px;
     text-transform: uppercase;
 }
-.products__flex > .products-boxshadow > div.product > a.buttons{
-    width: 40%;
-    position: absolute;
-    bottom: -25%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    background-color: #ed5338;
-    color: white;
-    min-width: 100px;
-    border-radius: 10px;
+div > div > .line2{
+    margin-top: 1rem;
+    opacity: 0.2;
+    border: 0.5px black solid;
+}
+.text-bold{
+    font-weight: 800;
+}
+/* Vùng main */
+.line1{
+    border: 1px solid black;
+    width: 90%;
+    margin: 1rem auto;
     opacity: 0;
-    transition: bottom 0.65s ease-in-out, padding 0.65s ease-out , opacity 0.5s ease-out;
 }
-.products__flex  > .products-boxshadow > div.product > .product-img{
+.section2{
+    margin: 1rem auto 4rem auto !important;
+}
+section.main{
+    width: 90%;
+    margin: 4rem auto 0 auto;
+}   
+section.main > div.text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+div.img{
+    width: 90%;
+    margin: 1.5rem auto;
+}
+div.img > img{
     width: 100%;
-    display: block;
 }
-.products__flex  > .products-boxshadow > div.product > .product-img > a{
-    width: 100%;
-}
-.products__flex > .products-boxshadow > div.product > .product-img >  a >  img{
-    width: 100%;
-    display: block;
-    transition: 0.5s ease-in;
-    border-radius: 10px;
-}
-.products__flex > .products-boxshadow > div.product > .product-sale{
-    z-index: 99;
-    position: absolute;
-    background-color: #ed5338;
-    right: 0;
-    padding: 8px 12px;
-    color: white;
-}
-/* xử lí hover product*/
-.product:hover{
-    box-shadow: 0px 1rem 10px rgba(0, 0, 0, 0.6);
-    transition: 300ms ease-out;
-}
-.product:hover > .product-img > a > img{
-    overflow: hidden;
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-    border-radius: 12px;
-}
-.product:hover > a.text{
-    visibility: hidden;
-    transform: scale(0);
-    transition: 0.5s ease-in-out;
-}
-.product:hover > a.buttons{
-    bottom: 0 !important;
-    visibility: visible;
-    padding: 10px 5px ;
-    margin: 10px 0px;
-    font-weight: 300;
-    min-width: 100px;
-    opacity: 1 !important;
-}
-
-
-
-
 /* body */
 
 
@@ -401,29 +351,36 @@ div.title > div > .line2{
     margin-left: 0.5rem;
 }
 .footer-content > .footer__flex > div > h4{
+    font-size: 16px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div > ul > li{
     line-height: 1.6;
 }
 .footer-content > .footer__flex > div > ul > li > a{
-    font-size: 12px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div > ul > li >div , span{
     line-height: 1.7;
-    font-size: 12px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div.col45 > ul > li > a{
     color: #ed5338;
 }
+/* footer-logo */
+.col10 > a.logo-bottom{
+    width: 150px;
+}
+.col10 > a.logo-bottom > img{
+    width: 100%;
+    display: block;
+}
 /* Social media */
-.logo, .social-media{
+.logo-bottom, .social-media{
     position: absolute;
     bottom: 0;
 }
-.logo{
+.logo-bottom{
     bottom: 15%;
     color: #ed5338;
     font-size: 22px;
@@ -452,17 +409,136 @@ div.title > div > .line2{
 /* footer */
 
 /* mobie */
-@media only screen and (max-width: 765px){
-    .btn-left , .btn-right{
+@media only screen and (max-width:450px){
+    div.go-to-top-link{
+        right: 3%;
+    }
+    /* =====  HEADER  ===== */
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png);
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+    
+    /* ==== FOOTER ==== */
+    .footer__flex{
+        flex-direction: column;
+    }
+    .ft-mobile{
+        width: 100%;
+    }
+    .ft-mobile__top{
+        height: 50px;   
+    }
+    .ft-mobile__top > .social-media{
+        right: 0;
+        bottom: -50%;
         display: none;
     }
+    .ft-mobile__top > a.logo-bottom{
+        width: 50%;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ft-mobile__top > a > img{
+        bottom: 0px;
+    }
+    .footer-content{
+        width: 100% !important;
+    }
+    .footer__flex{
+        width: 100% !important;
+    }
+    .footer__flex > div > ul > li > a{
+        padding: 0px 5px;
+    }
+    
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+    
+    /* =====  HEADER  ===== */
+    /* NAV */
+    .menu > li:last-child{
+        right: 7.5% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png);
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+
+
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 100%!important;
+    }
+    .footer__flex{
+        width: 98% !important;
+    }
+    a.logo-bottom{
+        left: 50%;
+        bottom: 10%;
+    }
+    ul.social-media{
+        left: 50%;
+    }
+    .footer-content > .footer__flex > div > h4{
+        font-size: 14px;
+    }
+    .footer-content > .footer__flex > div > ul > li >div , span{
+        font-size: 12px;
+    }
+    .footer-content > .footer__flex > div > ul > li > a{
+        font-size: 12px;
+    }
+    
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    /* header */
-    header{
-        width: 100%;
+    
+    /* =====  HEADER  ===== */
+   
+
+    /* =====  BODY  ===== */
+    
+   
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 80%;
     }
+    .logo-bottom{
+        bottom: 15%;
+    }
+}
+    
+/* Vùng dùng chung */
+*{
+    font-family: 'Dosis';
+    /* font-family: "Work Sans", sans-serif; */
+    color: black;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1023px){
+    /* =====  HEADER  ===== */
     nav > ul.menu > li > a{
         font-size: 14px;  
     }
@@ -476,11 +552,15 @@ div.title > div > .line2{
     .products__flex > .products-boxshadow{
         width: 45%;
     }
-    .footer-content{
-        width: 80%;
-    }
     .open{
         width: 15rem;
+    }
+    .menu > li:first-child{
+        width: 100% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 50%;
+        margin: 0 auto;
     }
     .menu > li:last-child > div > input{
         padding: 0.4rem 4rem 0.4rem 2.4rem;
@@ -492,8 +572,6 @@ div.title > div > .line2{
         right: 15%;
         font-size: 14px;
     }
-
-
     /* burger */
     .burger-menu > div > i{
         display: block;
@@ -537,30 +615,15 @@ div.title > div > .line2{
         padding: 2px 2.5rem;
     }
     .menu > li.burger-filling > ul > li.flexible > a:hover{
-        
         transform: none;
     }
     /* =====  BODY  ===== */
     div.title{
-        width: 100%;
+        width: 100%;    
     }
-    
+    /* ==== FOOTER ==== */
+    ul.social-media{
+        bottom: -5%;
+    }
 
-}
-    
-/* Vùng dùng chung */
-*{
-    font-family: 'Dosis';
-    /* font-family: "Work Sans", sans-serif; */
-    color: black;
-    font-size: 14px;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
 }

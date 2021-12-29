@@ -1,4 +1,4 @@
-/*heading*/
+/*header*/
 header{
     position: fixed;
     width: 100%;
@@ -119,12 +119,23 @@ nav > ul.menu > li > ul > li > a:hover{
     transition: 1s;
     text-shadow: none;
 }
-/* nav-icon */
+/* logo */
 .menu > li:first-child{
+    width: 140px;
     margin-right: auto;
-    min-width: 100px;
-    max-width: 20%;
 }
+.menu > li:first-child > div.logo > a{
+    display: block;
+    margin-left: 10px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.menu > li:first-child > div.logo > a> img{
+    display: block;
+    width: 100%;
+}
+/* nav-icon */
 .menu > li:last-child{
     margin-left: auto;
     display: flex;
@@ -228,9 +239,7 @@ nav > ul.menu > li > ul > li > a:hover{
 
 
 /* body */
-body{
-    /* background-color: #f3f3f3; */
-}
+
 section.main{
     width: 90%;
     margin: 6rem auto;
@@ -248,7 +257,7 @@ div.title > div{
 }
 div.title > div > h1{
     font-size: 62px;
- 
+    font-weight: 100;
 }
 div.title > div > .line2{
     opacity: 0.2;
@@ -313,12 +322,10 @@ div.title > div > .line2{
 .products > .product{
     width: 33.3%;
 }
-.products > .product > .products-boxshadow{
-    padding: 0px 2.5px 2.5px 2.5px;
-}
 /* Vùng nội dung sản phẩm */
 .product-content{
-    margin: 10px;
+    padding: 10px;
+    /* margin: 10px; */
     /* border: 2px rgba(0, 0, 0, 0.6) solid; */
 }
 .product-content > div { 
@@ -398,29 +405,36 @@ div.title > div > .line2{
     margin-left: 0.5rem;
 }
 .footer-content > .footer__flex > div > h4{
+    font-size: 16px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div > ul > li{
     line-height: 1.6;
 }
 .footer-content > .footer__flex > div > ul > li > a{
-    font-size: 12px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div > ul > li >div , span{
     line-height: 1.7;
-    font-size: 12px;
     color:rgba(255, 248, 248, 0.9);
 }
 .footer-content > .footer__flex > div.col45 > ul > li > a{
     color: #ed5338;
 }
+/* footer-logo */
+.col10 > a.logo-bottom{
+    width: 150px;
+}
+.col10 > a.logo-bottom > img{
+    width: 100%;
+    display: block;
+}
 /* Social media */
-.logo, .social-media{
+.logo-bottom, .social-media{
     position: absolute;
     bottom: 0;
 }
-.logo{
+.logo-bottom{
     bottom: 15%;
     color: #ed5338;
     font-size: 22px;
@@ -449,13 +463,172 @@ div.title > div > .line2{
 /* footer */
 
 /* mobie */
-@media only screen and (max-width: 765px){
-    .btn-left , .btn-right{
+@media only screen and (max-width:450px){
+    div.go-to-top-link{
+        right: 3%;
+    }
+    /* =====  HEADER  ===== */
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png);
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+    section.main{
+        width: 100% !important;
+    }
+    div.title > div > h1{
+        text-align: center;
+        font-size: 48px;
+    }
+    div.filter{
         display: none;
     }
+    .container{
+        width: 100%;
+    }
+    .products{
+        padding: 0px;
+    }
+    .products > .product{
+        width: 50%;
+    }
+    .product-text > .text{
+        font-size: 22px;
+    }
+    /* ==== FOOTER ==== */
+    .footer__flex{
+        flex-direction: column;
+    }
+    .ft-mobile{
+        width: 100%;
+    }
+    .ft-mobile__top{
+        height: 50px;   
+    }
+    .ft-mobile__top > .social-media{
+        right: 0;
+        bottom: -50%;
+        display: none;
+    }
+    .ft-mobile__top > a.logo-bottom{
+        width: 50%;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ft-mobile__top > a > img{
+        bottom: 0px;
+    }
+    .footer-content{
+        width: 100% !important;
+    }
+    .footer__flex{
+        width: 100% !important;
+    }
+    .footer__flex > div > ul > li > a{
+        padding: 0px 5px;
+    }
+    
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+    
+    /* =====  HEADER  ===== */
+    /* NAV */
+    .menu > li:last-child{
+        right: 7.5% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png);
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+
+    div.filter{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .products{
+        padding: 0px;
+    }
+    .products > .product{
+        width: 50%;
+    }
+    .product-text > .text{
+        font-size: 22px;
+    }
+
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 100%!important;
+    }
+    .footer__flex{
+        width: 98% !important;
+    }
+    a.logo-bottom{
+        left: 50%;
+        bottom: 10%;
+    }
+    ul.social-media{
+        left: 50%;
+    }
+    .footer-content > .footer__flex > div > h4{
+        font-size: 14px;
+    }
+    .footer-content > .footer__flex > div > ul > li >div , span{
+        font-size: 12px;
+    }
+    .footer-content > .footer__flex > div > ul > li > a{
+        font-size: 12px;
+    }
+    
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    
+    /* =====  HEADER  ===== */
+   
+
+  /* =====  BODY  ===== */
+    
+   
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 80%;
+    }
+    .logo-bottom{
+        bottom: 15%;
+    }
+}
+    
+/* Vùng dùng chung */
+*{
+    font-family: 'Dosis';
+    /* font-family: "Work Sans", sans-serif; */
+    color: black;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1023px){
+    /* =====  HEADER  ===== */
     nav > ul.menu > li > a{
         font-size: 14px;  
     }
@@ -466,14 +639,18 @@ div.title > div > .line2{
     .btn-left , .btn-right{
         display: none;
     }
-    /* .products__flex > .products-boxshadow{
+    .products__flex > .products-boxshadow{
         width: 45%;
-    } */
-    .footer-content{
-        width: 80%;
     }
     .open{
         width: 15rem;
+    }
+    .menu > li:first-child{
+        width: 100% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 50%;
+        margin: 0 auto;
     }
     .menu > li:last-child > div > input{
         padding: 0.4rem 4rem 0.4rem 2.4rem;
@@ -485,7 +662,6 @@ div.title > div > .line2{
         right: 15%;
         font-size: 14px;
     }
-    
     /* burger */
     .burger-menu > div > i{
         display: block;
@@ -529,45 +705,14 @@ div.title > div > .line2{
         padding: 2px 2.5rem;
     }
     .menu > li.burger-filling > ul > li.flexible > a:hover{
-        
         transform: none;
     }
-
-    /* VÙNG BODY */
-    
-    /* nội dung sản phẩm */
+    /* =====  BODY  ===== */
     div.title{
-        width: 100%;
+        width: 100%;    
     }
-    section.main{
-        width: 100%;
+    /* ==== FOOTER ==== */
+    ul.social-media{
+        bottom: -5%;
     }
-    .product-content > a.text{
-        font-size: 14px ;
-    }
-    .product-content > a.price{
-        font-size: 12px ;
-    }
-    div.product{
-        width: 50% !important;
-    }
-
-}
-    
-/* Vùng dùng chung */
-*{
-    font-family: 'Dosis';
-    /* font-family: "Work Sans", sans-serif; */
-    color: black;
-    font-size: 14px;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    
-}
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
 }
