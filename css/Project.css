@@ -59,15 +59,33 @@ header.areaScroll{
 header.areaScroll > div{
     display: none;
 }
-header.areaScroll >nav > ul.menu > li > a{
+header.areaScroll >nav > ul.menu > ul.burger-menu > div > i{
+    color: black ;  
+}
+header.areaScroll >nav > ul.menu > li > div.logo > a > img{
+    content: url(/img/logo-full_280px.png);
+    animation: change-logo 2s;
+}
+@keyframes change-logo{
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header.areaScroll >nav > ul.menu > li > ul > li.flexible > a{
     color: black ;
     text-shadow: none;
     transition: 1s ease-in-out;
 }
-header.areaScroll >nav > ul.menu > li > a:hover{
+header.areaScroll >nav > ul.menu > li > ul > li.flexible > a:hover{
     color: #ed5338;
     opacity: 1;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 /* gép nhóm span#search-icon, span#shopping-cart, span#user:hover */
 header.areaScroll > nav > ul.menu > li:last-child > div > span#search-icon {
@@ -103,6 +121,7 @@ header.areaScroll > nav > ul.menu > li:last-child > div >  span#user:hover{
 
 
 /* menu */
+/* nav */
 nav{
     width: 82.5%;
     margin: 0 auto;
@@ -112,20 +131,39 @@ nav > ul.menu{
     display: flex;
     list-style: none;
 }
-nav > ul.menu > li > a{
+nav > ul.menu > li > ul{
+    display: flex;
+}
+nav > ul.menu > li > ul > li > a{
+    color: #f3f3f3;
     text-transform: uppercase;
     text-decoration: none;
     display: block;
     padding: 0 15px;
-    font-weight: 600;
     transform: scale(1);
     transition: 0.5s;
 }
-nav > ul.menu > li > a:hover{
+nav > ul.menu > li > ul > li > a:hover{
     color: #ed5338;
     transform: scale(1.1,1.1);
     transition: 1s;
     text-shadow: none;
+}
+/* logo */
+.menu > li:first-child{
+    width: 140px;
+    margin-right: auto;
+}
+.menu > li:first-child > div.logo > a{
+    display: block;
+    margin-left: 10px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.menu > li:first-child > div.logo > a> img{
+    display: block;
+    width: 100%;
 }
 /* nav-icon */
 .menu > li:first-child{
@@ -206,7 +244,28 @@ nav > ul.menu > li > a:hover{
     transition: 0.5s ease-out;
     visibility: visible ;
 }
-
+/* burger menu */
+.burger-menu > div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+.burger-menu > div > i {
+    color: #f3f3f3;
+    height: 7px;
+    width: 20px;
+    font-size: 20px;
+    display: none;
+    transition: display 0.5s ease-out;
+}
+.burger-open{
+    transform: translateX(-50px);
+}
 /*heading*/
 
 
@@ -353,6 +412,7 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     width: 100%;
     text-shadow: black 2px 1.5px 2px;
     font-size: 22px;
+    font-weight: 100;
     text-transform: uppercase;
 }
 .table_menu>div>div.scription >div{
@@ -571,14 +631,21 @@ div.See_All_New > .caption >.caption__frame> a:hover{
 .footer-content > .footer__flex > div.col45 > ul > li > a{
     color: #ed5338;
 }
+/* footer-logo */
+.col10 > a.logo-bottom{
+    width: 150px;
+}
+.col10 > a.logo-bottom > img{
+    width: 100%;
+    display: block;
+}
 /* Social media */
-.logo, .social-media{
+.logo-bottom, .social-media{
     position: absolute;
     bottom: 0;
 }
-.logo{
+.logo-bottom{
     bottom: 15%;
-    text-decoration: none;
     color: #ed5338;
     font-size: 22px;
 }
@@ -606,7 +673,131 @@ div.See_All_New > .caption >.caption__frame> a:hover{
 /* footer */
 
 
+/* mobie */
+@media only screen and (max-width:450px){
+    div.go-to-top-link{
+        right: 3%;
+    }
+    /* =====  HEADER  ===== */
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png) !important;
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+    div.See_All_New > .caption > .caption__frame{
+        width: 100% !important;
+    }
+    .See_All_New > div.caption > .caption__frame > h1{
+        font-size: 26px !important;
+    }
+    /* ==== FOOTER ==== */
+    .footer__flex{
+        flex-direction: column;
+    }
+    .ft-mobile{
+        width: 100%;
+    }
+    .ft-mobile__top{
+        height: 50px;   
+    }
+    .ft-mobile__top > .social-media{
+        right: 0;
+        bottom: -50%;
+        display: none;
+    }
+    .ft-mobile__top > a.logo-bottom{
+        width: 50%;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ft-mobile__top > a > img{
+        bottom: 0px;
+    }
+    .footer-content{
+        width: 100% !important;
+    }
+    .footer__flex{
+        width: 100% !important;
+    }
+    .footer__flex > div > ul > li > a{
+        padding: 0px 5px;
+    }
+    
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+    
+    /* =====  HEADER  ===== */
+    /* NAV */
+    .menu > li:last-child{
+        right: 7.5% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .logo > a > img{
+        content: url(/img/logo_mobile.png) !important;
+        height: 55px;
+    }
+    /* =====  BODY  ===== */
+    div.See_All_New > .caption > .caption__frame{
+        width: 90% !important;
+    }
+    .See_All_New > div.caption > .caption__frame > h1{
+        font-size: 30px !important;
+    }
+    
 
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 100%!important;
+    }
+    .footer__flex{
+        width: 98% !important;
+    }
+    a.logo-bottom{
+        left: 50%;
+        bottom: 10%;
+    }
+    ul.social-media{
+        left: 50%;
+    }
+    .footer-content > .footer__flex > div > h4{
+        font-size: 14px;
+    }
+    .footer-content > .footer__flex > div > ul > li >div , span{
+        font-size: 12px;
+    }
+    .footer-content > .footer__flex > div > ul > li > a{
+        font-size: 12px;
+    }
+    
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    
+    /* =====  HEADER  ===== */
+   
+
+    /* =====  BODY  ===== */
+    .See_All_New > div.caption > .caption__frame > h1{
+        font-size: 36px;
+    }
+   
+    /* ==== FOOTER ==== */
+    .footer-content{
+        width: 80%;
+    }
+    .logo-bottom{
+        bottom: 15%;
+    }
+}
+    
 /* Vùng dùng chung */
 *{
     font-family: 'Dosis';
@@ -616,5 +807,93 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1023px){
+    /* =====  HEADER  ===== */
+    nav > ul.menu > li > a{
+        font-size: 14px;  
+    }
+    .menu > li:last-child > 
+    div > #search-icon, #shopping-cart, #user{
+        font-size: 14px;
+    }
+    .open{
+        width: 15rem;
+    }
+    .menu > li:first-child{
+        width: 100% !important;
+    }
+    .menu > li:first-child > div.logo > a{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .menu > li:last-child > div > input{
+        padding: 0.4rem 4rem 0.4rem 2.4rem;
+    }
+    .menu > li:last-child > div >span.fa-times{
+        font-size: 14px;
+    }
+    .menu > li:last-child > div >span.backspace-icon{
+        right: 15%;
+        font-size: 14px;
+    }
+    /* burger */
+    .burger-menu > div > i{
+        display: block;
+        transition: 0.5s ease-in-out;
+    }
+    nav{
+        width: 100%;
+    }
+    .menu{
+        position: relative;
+        display: grid !important;
+    }
+    .menu > li:last-child{
+        position: absolute;
+        right: 5%;
+        margin: 0;
+    }
+    .menu > li:first-child{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0px;
+    }
+    .menu > li.burger-filling{
+        display: none;
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transition: display 0.5s ease-in-out;
+    }
+    .menu > li.burger-filling > ul{
+        display: block;
+    }
+    .menu > li.burger-filling > ul > li.flexible{
+        position: relative;
+        background-color: rgba(253, 253, 253, 0.932);
+    }
+    .menu > li.burger-filling > ul > li.flexible > a{
+        padding: 2px 2.5rem;
+    }
+    .menu > li.burger-filling > ul > li.flexible > a:hover{
+        transform: none;
+    }
+    /* =====  BODY  ===== */
+    .See_All_New > div.caption > .caption__frame > h1{
+        font-size: 40px;
+    }
+    /* ==== FOOTER ==== */
+    ul.social-media{
+        bottom: -5%;
+    }
 }

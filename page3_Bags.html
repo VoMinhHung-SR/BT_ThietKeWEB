@@ -79,56 +79,35 @@
          </div>
 
      <!-- body -->
+     <!-- title -->
      <div class="title">
-        <div>        
-             <h1>SHOP BAGS</h1>
-             <div class="line2"></div>
+        <div>
+            <div class="flex">
+                <h1>SHOP BAGS</h1>
+                <!-- sử lí filter -->
+                <div class="filter flex">
+                    <div class="sub-title">Bộ lọc: </div>
+                    <!-- <div id="sort-list">Sắp xếp sản phẩm</div> -->
+                    <select name="filter" id="select">
+                        <option value="default">Khác</option>
+                        <option value="HighToLow">Giá: Cao đến Thấp</option>
+                        <option value="LowToHigh">Giá: Thấp đến Cao</option>
+                        <option value="new">Mới nhất</option>
+                        <option value="bestSeller">Bán chạy</option>
+                        <option value="sale">Giảm giá</option>
+                    </select>
+                </div>
+            </div>        
+            <div class="line2"></div>
         </div>
      </div>
+     <!-- main -->
      <section class="main">
-        <div class="col80 flex">
-            <!-- sử lí filter -->
-            <div class="filter">
-                <div class="sub-title">Bộ lọc</div>
-                <div id="sort-list">Sắp xếp sản phẩm</div>
-                <div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="l2h">Giá: Thấp đến Cao</label>
-                        <input type="radio" name ="filters" value="L2H">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="h2l">Giá: Cao đến Thấp</label>
-                        <input type="radio" name ="filters" value="H2L">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="New">Mới nhất</label>
-                        <input type="radio" name ="filters" value="new">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option"> 
-                        <label for="Popular">Phổ biến</label>
-                        <input type="radio" name ="filters" value="popular">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="BestSeller">Bán chạy</label>
-                        <input type="radio" name ="filters" value="bestSeller">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="Sale">Giảm giá</label>
-                        <input type="radio" name ="filters" value="sale">
-                    </div>
-                    <div id="line"></div>
-                </div>
-            </div>
+        <div>
             <!-- vùng sản phẩm -->
-            <div class="container">
+            <div class="container .col100">
                 <div class="products">
-                    <div class="product">
+                    <div class="product" data-price="2499">
                         <div class="products-boxshadow " id="product1">
                             <div class="product-content">
                                 <div>
@@ -139,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="2199">
                         <div class="products-boxshadow " id="product2">
                             <div class="product-content">
                                 <div>
@@ -147,84 +126,84 @@
                                     <a href="#"><img src="img/Products/Bags/FERNGOTY_2000x.png" alt="product2"></a>
                                 </div>
                                 <a href="#" class="text">FERNWEH Backpacking Bag</a>
-                                <a href="#" class="price">2.199.000 VND</a>
+                                <a href="#" class="price" >2.199.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1990">
                         <div class="products-boxshadow " id="product3">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/AllNewPRVE_2000x.jpg" alt="product3"></a>
                                 </div>
                                 <a href="#" class="text">PRVKE Lite</a>
-                                <a href="#" class="price">1.990.000 VND</a>
+                                <a href="#" class="price" >1.990.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1990">
                         <div class="products-boxshadow " id="product4">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/AllnewLITE_400x.jpg" alt="product4"></a>
                                 </div>
                                 <a href="#" class="text">All-New PRVKE</a>
-                                <a href="#" class="price">1.990.000 VND</a>
+                                <a href="#" class="price" >1.990.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="2199">
                         <div class="products-boxshadow " id="product5">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/carryall_standing_staps_out_2000x_5be76f3d-0060-4885-8e59-4320cd506465_400x.jpg" alt="product5"></a>
                                 </div>
                                 <a href="#" class="text">HEXAD Carryall Duffel Backpack</a>
-                                <a href="#" class="price">2.199.000 VND</a>
+                                <a href="#" class="price" >2.199.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1790">
                         <div class="products-boxshadow " id="product6">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/duo_front_400x.png" alt="product6"></a>
                                 </div>
                                 <a href="#" class="text">DUO Daypack</a>
-                                <a href="#" class="price">1.790.000 VND</a>
+                                <a href="#" class="price" >1.790.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1490">
                         <div class="products-boxshadow " id="product7">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/veer_floating_side_400x.png" alt="product7"></a>
                                 </div>
                                 <a href="#" class="text">VEER Packable Bag</a>
-                                <a href="#" class="price">1.490.000 VND</a>
+                                <a href="#" class="price" >1.490.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="790">
                         <div class="products-boxshadow " id="product8">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/d1_fanny_pack_400x.png" alt="product8"></a>
                                 </div>
                                 <a href="#" class="text">D1 Fanny Pack</a>
-                                <a href="#" class="price">790.000 VND</a>
+                                <a href="#" class="price" >790.000 VND</a>
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="990">
                         <div class="products-boxshadow " id="product9">
                             <div class="product-content">
                                 <div>
                                     <a href="#"><img src="img/Products/Bags/detour_400x.png" alt="product9"></a>
                                 </div>
                                 <a href="#" class="text">DETOUR Hip Pack</a>
-                                <a href="#" class="price">990.000 VND</a>
+                                <a href="#" class="price" >990.000 VND</a>
                             </div>
                         </div>
                     </div>
@@ -309,5 +288,6 @@
             </div> 
         </div>
     </footer>
+    <script src="js/sort.js"></script>
  </body>
 </html>

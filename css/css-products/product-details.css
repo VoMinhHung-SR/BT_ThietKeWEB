@@ -1,0 +1,95 @@
+.container{
+    width: 80%;
+    margin: 4rem auto 2rem auto;
+}
+.m-b-1{
+    margin-bottom: 1rem;
+}
+/* IMAGE AREA */
+.product-image{
+    width: 50%;
+}
+.product-image > div{
+    width: 100%;
+}
+.product-image > div > img{
+    
+    width: 100%;
+}
+
+/* TEXT AREA */
+.product-description{
+    padding: 0px 1.5rem;
+    width: 50%;
+}
+div.title{
+    top: 0px;
+    width: 100%;
+}
+div.title > div{
+    width: 100%;
+    margin: 0px;
+}
+div.title > div > h1{
+    margin-bottom: 1rem;
+    font-weight: 100;
+} 
+.price{
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+.product_option{
+    margin-top: 1.5rem;
+    width: 80%;
+}
+/* COLOR-OPTION */
+.color-option{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #e2e2e2;
+}
+.color-frame{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.black{
+    background-color: #222222;
+}
+.grey{
+    background-color: grey;
+}
+.green{
+    background-color: #005500;
+}
+.blue{
+    background-color: #205AA7;
+}
+/* SIZE OPTION */
+.sizing-option{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #e2e2e2;
+    cursor: pointer;
+}
+/* COMBO OPTION */
+.combo-option{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #e2e2e2;
+    cursor: pointer;
+}
+/* ADD BUTTON */
+.purchase-button{
+    width: 100%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ed5338;
+}
+
+.chose-option{
+    border: 2px solid #2d2e30 !important;
+}

@@ -546,9 +546,6 @@ a{
     div > #search-icon, #shopping-cart, #user{
         font-size: 14px;
     }
-    .btn-left , .btn-right{
-        display: none;
-    }
     .products__flex > .products-boxshadow{
         width: 45%;
     }

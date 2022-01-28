@@ -244,7 +244,12 @@ section.main{
     width: 90%;
     margin: 6rem auto;
 }
-/* Vùng top */
+section.main > div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Vùng titile */
 div.title{
     width: 90%;
     position: relative;
@@ -255,13 +260,27 @@ div.title > div{
     width: 90%;
     margin: 2rem auto;
 }
-div.title > div > h1{
+div.title > div > div >h1{
     font-size: 62px;
     font-weight: 100;
 }
 div.title > div > .line2{
     opacity: 0.2;
     border: 0.5px black solid;
+}
+/* Vùng title -> filter */
+div.title > div > div{
+    position: relative;
+}
+div.title > div > div > div.filter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+div.title > div > div > div.filter > div , select{
+    margin-right: 5px;
+    border: none;
+    font-size: 16px;
 }
 /* Vùng main */
 .flex{
@@ -271,49 +290,10 @@ div.title > div > .line2{
     width: 90%;
     margin: 0 auto;
 }
-/* filter-left */
-.filter{
-    width: 15%;
-}
-.filter  div, label{
-    color: #2d2e30;
-}
-.filter > .sub-title{
-    font-size: 15px;
-    font-weight: bold;
-}
-.filter > #sort-list{
-    font-size: 10px;
-    text-align: right;
-    padding: 10px 0px 5px 0px;
-    opacity: 0.6;
-}
-.filter > div > div.option {
-    position: relative;
-    padding: 0.5rem 0rem;
-}
-.filter > div > div.option > label{
-    font-size: 12px;
-}
-.filter > div > #line{
-    width: 100%;
-    border: black 0.5px solid;
-    opacity: 0.3;
-}
-.filter > div > div.option > input{
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    right: 0px;
-    top : 50%;
-    transform: translateY(-50%);
-}
+
+
 /* VÙNG SẢN PHẨM */
-.container{
-    width: 85%;
-}
 .products{
-    padding: 0px 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
@@ -386,6 +366,9 @@ div.title > div > .line2{
 }
 .col45{
     width: 45%;
+}
+.col100{
+    width: 100%;
 }
 .footer-contain{
     width: 100%;
@@ -480,13 +463,29 @@ div.title > div > .line2{
     section.main{
         width: 100% !important;
     }
-    div.title > div > h1{
+    /* vùng titile */
+    div.title > div > div.flex{
+        display: block;
+    }
+    div.title > div > div.flex > h1{
         text-align: center;
         font-size: 48px;
     }
+    /* vùng filter */
     div.filter{
-        display: none;
+        position: relative !important;
+        width: 100%;
+        margin: 10px 0px 5px 0px;
     }
+    div.filter > div{
+        width: 20%;
+        text-align: center;
+    }
+    div.filter > select{
+        width: 80%;
+        margin-left: auto;
+    }
+    /* vùng product */
     .container{
         width: 100%;
     }
@@ -494,10 +493,12 @@ div.title > div > .line2{
         padding: 0px;
     }
     .products > .product{
-        width: 50%;
+        width: 90%;
+        margin: 0 auto;
     }
-    .product-text > .text{
-        font-size: 22px;
+    .product-content > a.text, a.price{
+        font-size: 16px;
+        text-align: center;
     }
     /* ==== FOOTER ==== */
     .footer__flex{
@@ -550,10 +551,19 @@ div.title > div > .line2{
         height: 55px;
     }
     /* =====  BODY  ===== */
-
-    div.filter{
-        display: none;
+    /* vùng titile */
+    div.title > div > div{
+        display: block;
     }
+    div.title > div > div > div.filter{
+        position: relative;
+        width: 100%;
+        margin: 10px 0px 5px 0px;
+    }
+    div.title > div > div > div.filter > div{
+        margin-left: auto;
+    }
+    /* vùng product */
     .container{
         width: 100%;
     }
@@ -710,6 +720,9 @@ a{
     /* =====  BODY  ===== */
     div.title{
         width: 100%;    
+    }
+    section.main{
+        width: 100%;  
     }
     /* ==== FOOTER ==== */
     ul.social-media{

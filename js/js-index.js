@@ -42,6 +42,23 @@ function init(){
                 document.getElementById("hidden").style.visibility = "hidden";
     })
     
+    // // Burger-menu 
+    let menuOpen = false;
+    var subMenuBtn = document.querySelector(".burger-menu > div");
+
+    subMenuBtn.addEventListener("click", function(){
+        if (!menuOpen)
+        {
+            document.getElementById("active-subMenu").style.display = "block";
+            // subMenuBtn.classList.add(".burger-open");
+            menuOpen = true;
+        }
+        else{
+            document.getElementById("active-subMenu").style.display = "none";
+            menuOpen = false;
+        }
+    })
+
     //go--to--top
     $("a.go-to-top-btn").click(function(){
         $("body, html").animate({scrollTop : 0},1000  );
@@ -55,8 +72,8 @@ function init(){
         else{
             $("a.go-to-top-btn ").fadeOut(500);
         }
-    })
+    }) 
+
     
-   
 }
 
