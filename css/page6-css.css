@@ -219,27 +219,6 @@ nav > ul.menu > li > ul > li > a:hover{
     transition: 0.5s ease-out;
     visibility: visible ;
 }
-/* burger menu */
-.burger-menu > div{
-    padding: 10px 0px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    width: 50px;
-    position: absolute;
-    left: 5%;
-    top: 0px;
-}
-.burger-menu > div > i {
-    height: 7px;
-    width: 20px;
-    font-size: 20px;
-    display: none;
-    transition: display 0.5s ease-out;
-}
-.burger-open{
-    transform: translateX(-50px);
-}
 
 /*heading*/
 
@@ -655,11 +634,7 @@ a{
         right: 15%;
         font-size: 14px;
     }
-    /* burger */
-    .burger-menu > div > i{
-        display: block;
-        transition: 0.5s ease-in-out;
-    }
+    
     nav{
         width: 100%;
     }
@@ -679,27 +654,7 @@ a{
         max-width: 100%;
         margin: 0px;
     }
-    .menu > li.burger-filling{
-        display: none;
-        position: relative;
-        width: 100%;
-        left: 0;
-        right: 0;
-        transition: display 0.5s ease-in-out;
-    }
-    .menu > li.burger-filling > ul{
-        display: block;
-    }
-    .menu > li.burger-filling > ul > li.flexible{
-        position: relative;
-        background-color: rgba(253, 253, 253, 0.932);
-    }
-    .menu > li.burger-filling > ul > li.flexible > a{
-        padding: 2px 2.5rem;
-    }
-    .menu > li.burger-filling > ul > li.flexible > a:hover{
-        transform: none;
-    }
+    
     /* =====  BODY  ===== */
     div.title{
         width: 100%;    

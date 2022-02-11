@@ -3,6 +3,8 @@ window.addEventListener("scroll",function(){
     var navScroll = document.querySelector("header");
     navScroll.classList.toggle("areaScroll", window.scrollY > 0)
 })
+
+
 function init(){
     var searchInput = document.getElementById("text__input");
     var SearchBar = document.querySelector("li > div.searchBar"); 
@@ -46,15 +48,17 @@ function init(){
     let menuOpen = false;
     var subMenuBtn = document.querySelector(".burger-menu > div");
 
+    
     subMenuBtn.addEventListener("click", function(){
         if (!menuOpen)
         {
             document.getElementById("active-subMenu").style.display = "block";
-            // subMenuBtn.classList.add(".burger-open");
+            subMenuBtn.classList.add("burger-open");
             menuOpen = true;
         }
         else{
             document.getElementById("active-subMenu").style.display = "none";
+            subMenuBtn.classList.remove("burger-open");
             menuOpen = false;
         }
     })

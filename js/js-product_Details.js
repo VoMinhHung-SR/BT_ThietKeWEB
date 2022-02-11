@@ -22,6 +22,7 @@ function combo_change(combo){
     removeClass("chose-option",cb)
     combo.classList.add("chose-option")
 }
+
 function removeClass(className, arr){
     for(var i = 0; i < arr.length; i++){
         arr[i].classList.remove(className)

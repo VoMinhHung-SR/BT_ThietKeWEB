@@ -6,6 +6,7 @@ window.addEventListener("scroll",function(){
     navScroll.classList.toggle("areaScroll", window.scrollY > 0)
 })
 
+
 function init(){
     //Search-bar
     var searchInput = document.getElementById("text__input");
@@ -51,15 +52,17 @@ function init(){
     let menuOpen = false;
     var subMenuBtn = document.querySelector(".burger-menu > div");
 
+    
     subMenuBtn.addEventListener("click", function(){
         if (!menuOpen)
         {
             document.getElementById("active-subMenu").style.display = "block";
-            // subMenuBtn.classList.add(".burger-open");
+            subMenuBtn.classList.add("burger-open");
             menuOpen = true;
         }
         else{
             document.getElementById("active-subMenu").style.display = "none";
+            subMenuBtn.classList.remove("burger-open");
             menuOpen = false;
         }
     })
@@ -71,7 +74,7 @@ function init(){
             scrollTop : 0
         },1000);
         return false;
-    } )
+    })
     $(window).scroll(function(){
         if($(this).scrollTop() >= 200){
             $("a.go-to-top-btn > i").css("display", "block");
@@ -81,7 +84,12 @@ function init(){
             $("a.go-to-top-btn ").fadeOut(500);
         }
     })
-
+    $('.thumb a img').click(function(e){
+        console.log("hi");
+        e.preventDefault();
+        $('.imgBox img').attr("src", $(this).attr("src"))
+    })
     
 }
+
 

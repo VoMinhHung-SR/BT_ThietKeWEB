@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <title>Product Details</title>
         <link rel="stylesheet" href="css/css-products/page3.css">
-        <link rel="stylesheet" href="css/css-Shared.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/burger.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="css/css-products/product-details.css">
@@ -26,9 +27,10 @@
                     </li>
                     <ul class="burger-menu">
                         <div>
-                            <i class="fas fa-minus" id="burger__top"></i>
+                            <div class="menu-btn__burger"></div>
+                            <!-- <i class="fas fa-minus" id="burger__top"></i>
                             <i class="fas fa-minus" id="burger__middle"></i>
-                            <i class="fas fa-minus" id="burger__bottom"></i>
+                            <i class="fas fa-minus" id="burger__bottom"></i> -->
                         </div>
                     </ul>
                     <!-- vùng xử lí nav-menu & burger-menu -->
@@ -79,19 +81,34 @@
             </a>
         </div>
         <br><br>
-     <!-- body -->
+     <!-- main -->
         <section class="container">
             <div class="product flex">
                 <div class="product-image">
-                    <div>
-                        <img src="img/Products/Bags/Details/Product4/Black/Black.png" alt="produc1" >
+                    <div class="imgBox">
+                        <img src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black.png" alt="AllnewLITE_400x" >
                     </div>
-                    <div></div>
+                    <div class="col100">
+                        <ul class="flex thumb">
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black.png" alt="Black-front"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black2.png" alt="Black-back"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black3.png" alt="Black-left"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black4.png" alt="Black-right"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Blue/Blue.png" alt="Blue-front"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Green/Green.png" alt="Green-front"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Black/Black-Bundle.png" alt="Black-Bundle"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Blue/Blue-Bundle.png" alt="Blue-Bundle"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Green/Green-Bundle.png" alt="Green-Bundle"></a></li>
+                            <li><a><img  src="img/Products/Bags/Thumb/AllnewLITE_400x/Life1_2000x.jpg" alt="Life-pic"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <section class="product-description">
                     <div class="title">
-                        <div>        
-                            <h1 style="text-transform: uppercase;">All-New PRVKE</h1>
+                        <div>
+                            <div>
+                                <h1 style="text-transform: uppercase;">All-New PRVKE</h1>
+                            </div>       
                             <div class="line2"></div>
                         </div>
                     </div>
@@ -215,4 +232,5 @@
         </footer>
     </body>
     <script src="js/js-product_Details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 </html>

@@ -5,6 +5,20 @@
 .m-b-1{
     margin-bottom: 1rem;
 }
+/* thumbnails */
+.thumb > li{
+    margin: 0px 5px;
+}
+.thumb > li > a{
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 2px;
+}
+.thumb > li > a > img{
+    width: 100%;
+    display: block;
+}
+
 /* IMAGE AREA */
 .product-image{
     width: 50%;
@@ -13,9 +27,9 @@
     width: 100%;
 }
 .product-image > div > img{
-    
     width: 100%;
 }
+
 
 /* TEXT AREA */
 .product-description{
@@ -30,7 +44,7 @@ div.title > div{
     width: 100%;
     margin: 0px;
 }
-div.title > div > h1{
+div.title > div > div > h1{
     margin-bottom: 1rem;
     font-weight: 100;
 } 

@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <title>Accessories Page</title>
         <link rel="stylesheet" href="css/css-products/page4.css">
-        <link rel="stylesheet" href="css/css-Shared.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/burger.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
         <script src="js/js-Shared.js"></script>
@@ -25,9 +26,10 @@
                     </li>
                     <ul class="burger-menu">
                         <div>
-                            <i class="fas fa-minus" id="burger__top"></i>
+                            <div class="menu-btn__burger"></div>
+                            <!-- <i class="fas fa-minus" id="burger__top"></i>
                             <i class="fas fa-minus" id="burger__middle"></i>
-                            <i class="fas fa-minus" id="burger__bottom"></i>
+                            <i class="fas fa-minus" id="burger__bottom"></i> -->
                         </div>
                     </ul>
                     <!-- vùng xử lí nav-menu & burger-menu -->
@@ -80,55 +82,33 @@
 
      <!-- body -->
      <div class="title">
-        <div>        
-             <h1>PHỤ KIỆN</h1>
-             <div class="line2"></div>
+        <div>
+            <div class="flex">
+                <h1>PHỤ KIỆN</h1>
+                <!-- sử lí filter -->
+                <div class="filter flex">
+                    <div class="sub-title">Bộ lọc: </div>
+                    <!-- <div id="sort-list">Sắp xếp sản phẩm</div> -->
+                    <select name="filter" id="select">
+                        <option value="default">Khác</option>
+                        <option value="HighToLow">Giá: Cao đến Thấp</option>
+                        <option value="LowToHigh">Giá: Thấp đến Cao</option>
+                        <option value="new">Mới nhất</option>
+                        <option value="bestSeller">Bán chạy</option>
+                        <option value="sale">Giảm giá</option>
+                    </select>
+                </div>
+            </div>        
+            <div class="line2"></div>
         </div>
      </div>
      <section class="main">
-        <div class="col80 flex">
-            <!-- sử lí filter -->
-            <div class="filter">
-                <div class="sub-title">Bộ lọc</div>
-                <div id="sort-list">Sắp xếp sản phẩm</div>
-                <div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="l2h">Giá: Thấp đến Cao</label>
-                        <input type="radio" name ="filters" value="L2H">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="h2l">Giá: Cao đến Thấp</label>
-                        <input type="radio" name ="filters" value="H2L">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="New">Mới nhất</label>
-                        <input type="radio" name ="filters" value="new">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option"> 
-                        <label for="Popular">Phổ biến</label>
-                        <input type="radio" name ="filters" value="popular">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="BestSeller">Bán chạy</label>
-                        <input type="radio" name ="filters" value="bestSeller">
-                    </div>
-                    <div id="line"></div>
-                    <div class="option">
-                        <label for="Sale">Giảm giá</label>
-                        <input type="radio" name ="filters" value="sale">
-                    </div>
-                    <div id="line"></div>
-                </div>
-            </div>
+        <div>
             <!-- vùng sản phẩm -->
             <div class="container">
                 <div class="products">
-                    <div class="product">
+
+                    <div class="product" data-price="459">
                         <div class="products-boxshadow " id="product1">
                             <div class="product-content">
                                 <div>
@@ -139,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1199">
                         <div class="products-boxshadow " id="product2">
                             <div class="product-content">
                                 <div>
@@ -151,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="999">
                         <div class="products-boxshadow " id="product3">
                             <div class="product-content">
                                 <div>
@@ -162,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1999">
                         <div class="products-boxshadow " id="product4">
                             <div class="product-content">
                                 <div>
@@ -173,8 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="product">
+                    <div class="product" data-price="719">
                         <div class="products-boxshadow " id="product5">
                             <div class="product-content">
                                 <div>
@@ -185,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="790">
                         <div class="products-boxshadow " id="product6">
                             <div class="product-content">
                                 <div>
@@ -196,7 +175,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="419">
                         <div class="products-boxshadow " id="product7">
                             <div class="product-content">
                                 <div>
@@ -206,9 +185,8 @@
                                 <a href="#" class="price">419.000 VND</a>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="product">
+                    </div>                 
+                    <div class="product" data-price="1090">
                         <div class="products-boxshadow " id="product8">
                             <div class="product-content">
                                 <div>
@@ -219,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="1090">
                         <div class="products-boxshadow " id="product9">
                             <div class="product-content">
                                 <div>
@@ -230,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="519">
                         <div class="products-boxshadow " id="product10">
                             <div class="product-content">
                                 <div>
@@ -241,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="449">
                         <div class="products-boxshadow " id="product11">
                             <div class="product-content">
                                 <div>
@@ -252,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" data-price="109">
                         <div class="products-boxshadow " id="product12">
                             <div class="product-content">
                                 <div>
@@ -344,5 +322,6 @@
             </div> 
         </div>
     </footer>
+    <script src="js/sort.js"></script>
  </body>
 </html>
