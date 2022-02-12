@@ -67,6 +67,7 @@ function init(){
         }
     })
     
+
     //Jquery
     //go--to--top
     $("a.go-to-top-btn").click(function(){
@@ -84,12 +85,26 @@ function init(){
             $("a.go-to-top-btn ").fadeOut(500);
         }
     })
+
+    // thumbnails
     $('.thumb a img').click(function(e){
-        console.log("hi");
+        // console.log("hi");
         e.preventDefault();
         $('.imgBox img').attr("src", $(this).attr("src"))
     })
+    $('.color-option').click(function(){
+        var c = $(this).attr("data-color")
+        // console.log(c)
+        $('.imgBox img').attr("src", `img/Products/Bags/Thumb/AllnewLITE_400x/${c}/${c}.png`)
+    })
+    // $('.combo-option').click(function(){
+    //     var combo = $(this).attr("data-combo")
+    //     // console.log(c)
+    //     $('.imgBox img').attr("src", `img/Products/Bags/Thumb/AllnewLITE_400x/${c}/${c}.png`)
+    // })
+
     
 }
+
 
 

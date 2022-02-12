@@ -360,7 +360,7 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     display: flex;
     position: relative;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
 }
 .table_menu>div{
     width: 33%;
@@ -493,7 +493,7 @@ div.See_All_New > .caption >.caption__frame> a:hover{
 }
 .product-content > div.product-container{
     display: flex;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 .product-content > div.product-container > div + div{
@@ -541,7 +541,7 @@ div.See_All_New > .caption >.caption__frame> a:hover{
 
 /* Vùng 5 */
 .review-area{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -678,6 +678,49 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     .See_All_New > div.caption > .caption__frame > h1{
         font-size: 26px !important;
     }
+
+    /* vung table_menu */
+    .table_menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    .table_menu > div{
+        margin-bottom: 10px;
+        width: 80%;
+    }
+ 
+
+    /* vung product-content */
+    .product-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80% !important;
+    }
+    .product-container > div.product{
+        width: 100% !important;
+    }
+    .product-content > div.product-container > div.product > a{
+        font-size: 18px;
+    }
+
+    /* vung review */
+    .review-area{
+        width: 100%;
+    }
+    .flex3{
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80% !important;
+    }
+    .flex3 > div{
+        width: 100% !important;
+    }
+
     /* ==== FOOTER ==== */
     .footer__flex{
         flex-direction: column;
@@ -728,6 +771,8 @@ div.See_All_New > .caption >.caption__frame> a:hover{
         content: url(/img/logo_mobile.png) !important;
         height: 55px;
     }
+
+
     /* =====  BODY  ===== */
     div.See_All_New > .caption > .caption__frame{
         width: 90% !important;
@@ -735,7 +780,49 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     .See_All_New > div.caption > .caption__frame > h1{
         font-size: 30px !important;
     }
-    
+    /* vung table_menu */
+    .table_menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90% !important;
+    }
+    .table_menu > div{
+        margin-bottom: 1rem;
+        width: 70%;
+        margin-left: 0px;
+    }
+ 
+
+    /* vung product-content */
+    .product-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70% !important;
+    }
+    .product-container > div.product{
+        width: 100% !important;
+    }
+    .product-content > div.product-container > div.product > a{
+        font-size: 20px;
+    }
+
+    /* vung review */
+    .review-area{
+        width: 70% !important;
+    }
+    .flex3{
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80% !important;
+    }
+    .flex3 > div{
+        width: 100% !important;
+    }
+
 
     /* ==== FOOTER ==== */
     .footer-content{
@@ -768,11 +855,15 @@ div.See_All_New > .caption >.caption__frame> a:hover{
     /* =====  HEADER  ===== */
    
 
+
+
     /* =====  BODY  ===== */
     .See_All_New > div.caption > .caption__frame > h1{
         font-size: 36px;
     }
-   
+    
+
+
     /* ==== FOOTER ==== */
     .footer-content{
         width: 80%;
@@ -799,6 +890,8 @@ a{
     text-decoration: none;
 }
 @media only screen and (max-width: 1023px){
+
+
     /* =====  HEADER  ===== */
     nav > ul.menu > li > a{
         font-size: 14px;  
@@ -852,10 +945,30 @@ a{
         color: black;
     }
     
+    
     /* =====  BODY  ===== */
     .See_All_New > div.caption > .caption__frame > h1{
         font-size: 40px;
     }
+
+    /* vung table_menu */
+    .table_menu{
+        width: 90%;
+    }
+    .trademark{
+        width: 100%;
+    }
+    /* vung product-content  */
+    .product-content > div.product-container{
+        width: 90%;
+    }
+
+    /* vung review */
+    .review-area{
+        width: 90%;
+    }
+
+
     /* ==== FOOTER ==== */
     ul.social-media{
         bottom: -5%;

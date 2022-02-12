@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="css/css-products/product-details.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
-        <script src="js/js-Shared.js"></script>
+        <script src="js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
      </head>
@@ -117,13 +117,13 @@
                         <div class="color m-b-1">
                             <h2>MÀU</h2>
                             <div class="flex">
-                                <div class="color-option" onclick="color_change(this)">
+                                <div class="color-option" onclick="color_change(this)" data-color="Black" data-toggle="tooltip" title="Black">
                                     <div class="color-frame black"></div>
                                 </div>
-                                <div class="color-option" onclick="color_change(this)">
+                                <div class="color-option" onclick="color_change(this)" data-color="Blue" data-toggle="tooltip" title="Aegean Blue">
                                     <div class="color-frame blue"></div>
                                 </div>
-                                <div class="color-option" onclick="color_change(this)">
+                                <div class="color-option" onclick="color_change(this)" data-color="Green" data-toggle="tooltip" title="Wasatch Green">
                                     <div class="color-frame green"></div>
                                 </div>
                             </div>
@@ -131,15 +131,15 @@
                         <div class="size m-b-1">
                             <h2>SIZE</h2>
                             <div class="flex">
-                                <div class="sizing-option" onclick="size_change(this)">Trung (21L)</div>
-                                <div class="sizing-option"  onclick="size_change(this)">Lớn (31L)</div>
+                                <div class="sizing-option" onclick="size_change(this)" data-size="Medium">Trung (21L)</div>
+                                <div class="sizing-option"  onclick="size_change(this)" data-size="Large">Lớn (31L)</div>
                             </div>
                         </div>
                         <div class="combo m-b-1">
                             <h2>CÁC GÓI PHỤ KIỆN</h2>
                             <div class="flex">
-                                <div class="combo-option" onclick="combo_change(this)">Chỉ Balo</div>
-                                <div class="combo-option" onclick="combo_change(this)">Gói nhiếp ảnh</div>
+                                <div class="combo-option" onclick="combo_change(this)" data-combo="">Chỉ Balo</div>
+                                <div class="combo-option" onclick="combo_change(this)" data-combo="Bundle">Gói nhiếp ảnh</div>
                             </div>
                         </div>
                         <div class="purchase m-b-1">
