@@ -12,7 +12,7 @@ header > div{
     text-align: center;
     padding: 10px 0px;
     /* font-style: italic; */
-    font-size: 7px;
+    font-size: 12px;
     text-transform: uppercase;
     text-shadow: 1px 1.5px 4px #ed5338af;
 }
@@ -263,7 +263,6 @@ nav > ul.menu > li > ul > li > a:hover{
 div.See_All_New{
     position: relative;
     width: 100%;
-    top: 30px
 }
 div.See_All_New > div > img{
     width: 100%;
